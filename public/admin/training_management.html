@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head  meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>훈련 관리</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="../assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="../assets/modules/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" href="../assets/modules/summernote/summernote-bs4.css">
+  <link rel="stylesheet" href="../assets/modules/owlcarousel2/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/modules/owlcarousel2/dist/assets/owl.theme.default.min.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+<!-- Start GA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-94034622-3');
+</script>
+<!-- /END GA --></head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            
+         
+          </ul>
+          <div class="search-element">
+          
+            <div class="search-backdrop"></div>
+            <div class="search-result">
+              <div class="search-header">
+                Histories
+              </div>
+              <div class="search-item">
+                <a href="#">How to hack NASA using CSS</a>
+                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+              </div>
+              <div class="search-item">
+                <a href="#">Kodinger.com</a>
+                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+              </div>
+              <div class="search-item">
+                <a href="#">#Stisla</a>
+                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+              </div>
+              <div class="search-header">
+                Result
+              </div>
+              <div class="search-item">
+                <a href="#">
+                  <img class="mr-3 rounded" width="30" src="../assets/img/products/product-3-50.png" alt="product">
+                  oPhone S9 Limited Edition
+                </a>
+              </div>
+              <div class="search-item">
+                <a href="#">
+                  <img class="mr-3 rounded" width="30" src="../assets/img/products/product-2-50.png" alt="product">
+                  Drone X2 New Gen-7
+                </a>
+              </div>
+              <div class="search-item">
+                <a href="#">
+                  <img class="mr-3 rounded" width="30" src="../assets/img/products/product-1-50.png" alt="product">
+                  Headphone Blitz
+                </a>
+              </div>
+              <div class="search-header">
+                Projects
+              </div>
+              <div class="search-item">
+                <a href="#">
+                  <div class="search-icon bg-danger text-white mr-3">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  Stisla Admin Template
+                </a>
+              </div>
+              <div class="search-item">
+                <a href="#">
+                  <div class="search-icon bg-primary text-white mr-3">
+                    <i class="fas fa-laptop"></i>
+                  </div>
+                  Create a new Homepage Design
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+        <ul class="navbar-nav navbar-right">
+   
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Admin</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+   
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand-logo">
+            <a href="/" style="font-size:18px;">국가기간망<br> 침투대응훈련
+            </a>
+           
+          </div>
+
+          <ul class="sidebar-menu">
+
+            <!-- <li class="menu-header">사용자 메뉴</li>
+
+            <li><a class="nav-link" href="/user/group_setting"><i class="far fa-square"></i><span>그룹 설정</span></a></li>
+
+           <li><a class="nav-link" href="/user/problem_solving"><i class="far fa-square"></i> <span>문제 풀이</span></a></li>
+           <li><a class="nav-link" href="/user/training_statistics"><i class="far fa-square"></i> <span>훈련 통계</span></a></li>
+
+           <li class="menu-header">관리자 메뉴</li> -->
+           <li><a class="nav-link" href="/admin/training_management"><i class="far fa-square"></i> <span>훈련 관리</span></a></li>
+           <li class="dropdown">
+             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="far fa-square"></i> <span>문제 관리</span></a>
+             <ul class="dropdown-menu">
+               <li><a class="nav-link" href="/admin/problem_group">문제 그룹</a></li>
+               <li><a class="nav-link" href="/admin/question_management">문항 관리</a></li>
+    
+             </ul>
+           </li>
+           <li><a class="nav-link" href="/admin/problem_solving"><i class="far fa-square"></i> <span>문제 풀이</span></a></li>
+           
+          <li><a class="nav-link" href="/admin/view_results"><i class="far fa-square"></i> <span>결과 보기</span></a></li>
+          </ul>
+      </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>훈련 관리</h1>
+
+          </div>
+
+          <div class="section-header" >
+            <button class="btn btn-primary" id="modal-13" style="float:right; margin-left: 10%; width:200px">훈련 시작</button>
+            <button class="btn btn-primary" id="modal-14" style="float:right; margin-left: 10%; width:200px">훈련 정지</button>
+            <button class="btn btn-primary" id="modal-15" style="float:right; margin-left: 10%; width:200px">그룹 조회</button>
+            <button class="btn btn-primary" id="modal-16" style="float:right; margin-left: 10%; width:200px">팀 코드 조회</button>
+            <!-- <button type="button" onclick="alert('훈련을 시작 하시겠습니까?')" style="float:right; margin-left: 10%; width:200px">훈련 시작</button>  -->
+            <!-- <button type="button" onclick="alert('훈련을 정지 하시겠습니까?')" style="float:right; margin-left: 10%;width:200px">훈련 정지</button> 
+            <button type="button" onclick="alert('그룹을 조회 하시겠습니까?')" style="float:right; margin-left: 10%; width:200px">그룹 조회</button> 
+            <button type="button" onclick="alert('팀 코드를 조회 하시겠습니까?')" style="float:right; margin-left: 10%;width:200px">팀 코드 조회</button>  -->
+          </div>
+
+          <div class="section-body">
+           
+            <div class="row">
+
+              <div class="col-12">
+                <div class="card">
+
+                  <div class="card-body">
+                    
+                    <div class="form-group">
+                      <label style="margin-left: 45%;">훈련 설정 </label>
+                     
+                      <br>
+                      
+                      <div style="border:1px solid; padding:15px">
+                        <!-- margin-right -->
+                        <div class="card-body" style="margin-left:30%;">
+                          <input class="form-check-input" type="checkbox" id="defaultCheck1" style="margin-left:1%; margin-top:1.5%;">
+                          
+                            <!-- <input class="form-check-input" type="checkbox" id="defaultCheck1" style="margin-right:10%;"> -->
+                          <div class="form-group">
+                          
+                            
+                            <br>
+                           
+                            
+                          
+                             <label style="float:left; margin-left:5%;" >1차시</label>
+                            
+                            
+                            <select class="form-control" style="width:30%; margin-left:3%; float:left;">
+                              <option>직접 선택</option>
+                              <option>내부 PC</option>
+                              <option>내부 서버</option>
+                              <option>내부 테스트</option>
+                              
+                            </select>
+                            <button type="button" onclick="alert('훈련을 설정합니다.')" style="float:left; margin-left:5%;">확인</button>
+                            <button type="button" onclick="alert('훈련을 수정합니다.')" style="float:left; margin-left:5%;">수정</button>  
+                           
+                          <div class="form-group">
+                            
+                            
+                            <br>
+                            
+                            <br>
+                          
+                            <br>
+                            <input class="form-check-input" type="checkbox" id="defaultCheck1" style="margin-left:1%; margin-top:1.5%;">
+                            <br>
+                          
+                             <label style="float:left; margin-left:5%;" >2차시</label>
+                            
+                            
+                            <select class="form-control" style="width:30%; margin-left:3%; float:left;">
+                              <option>직접 선택</option>
+                              <option>내부 PC</option>
+                              <option>내부 서버</option>
+                              <option>내부 테스트</option>
+                              
+                            </select>
+                            <button type="button" onclick="alert('훈련을 설정합니다.')" style="float:left; margin-left:5%;">확인</button>
+                            <button type="button" onclick="alert('훈련을 수정합니다.')" style="float:left; margin-left:5%;">수정</button>  
+                            <br>
+
+                          
+                          </div>
+      
+                        </div>
+      
+                       
+                      </div>
+                    </div>
+                    <br>
+                    <br>
+
+                  </div>
+                </div>
+
+                <div class="card-body" id = "test">
+                    
+                  <div class="form-group">
+                    <label style="margin-left: 45%;">그룹 조회 </label>
+                    <br>
+
+                    <!-- <div style="border:1px solid; padding:15px">
+                      <div class="card-body" style="margin-left:3%;">
+                       
+                      
+                        <div class="form-group">
+                          <div class="card">
+                       
+                            <div class="card-body">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">이름</th>
+                                    <th scope="col">기관</th>
+                                    <th scope="col">팀 코드</th>
+                                    <th scope="col">팀 (조)</th>
+                                    
+    
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>abc12</td>
+                                    <td>cys</td>
+                                    <td>A01</td>
+                                    <td>1조</td>
+                                   
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>def33</td>
+                                    <td>ays</td>
+                                    <td>A02</td>
+                                    <td>2조</td>
+                                  
+                                    
+                                  </tr>
+    
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          
+                          <br>
+                      </div>
+
+                     
+                    </div>
+                  </div> -->
+                  <br>
+                  <br>
+
+                </div>
+              </div>
+
+                
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+     
+    </div>
+  </div>
+
+  
+  <!-- General JS Scripts -->
+  <script src="../assets/modules/jquery.min.js"></script>
+  <script src="../assets/modules/popper.js"></script>
+  <script src="../assets/modules/tooltip.js"></script>
+  <script src="../assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="../assets/modules/moment.min.js"></script>
+  <script src="../assets/js/stisla.js"></script>
+  <script src="../assets/js/page/bootstrap-modal.js"></script>
+
+  <!-- JS Libraies -->
+  <script src="../assets/modules/jquery.sparkline.min.js"></script>
+  <script src="../assets/modules/chart.min.js"></script>
+  <script src="../assets/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
+  <script src="../assets/modules/summernote/summernote-bs4.js"></script>
+  <script src="../assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="../assets/js/page/index.js"></script>
+  
+  <!-- Template JS File -->
+  <script src="../assets/js/scripts.js"></script>
+  <script src="../assets/js/custom.js"></script>
+ackage</p>
+
+
+</body>
+</html>
+</html>
