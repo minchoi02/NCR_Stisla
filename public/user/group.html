@@ -26,6 +26,21 @@
 
   gtag('config', 'UA-94034622-3');
 </script>
+
+<script>
+	function signOut() {
+		$.ajax({
+			type: "get",
+			url: 'http://localhost:5000/login',
+			data: {},
+			dataType:'text',
+			success: function(res) {
+				location.reload();
+			}
+		});
+	}
+</script>
+
 <!-- /END GA --></head>
 
 <body>
@@ -108,9 +123,12 @@
             <div class="dropdown-menu dropdown-menu-right">
 
               <div class="dropdown-divider"></div>
+              <button type="button" onclick="location.href='/login';" style="cursor:pointer;">Logout</button>
+              <!--
               <a href="#" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Logout
               </a>
+            -->
             </div>
           </li>
         </ul>
