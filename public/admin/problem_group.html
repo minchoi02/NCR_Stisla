@@ -26,6 +26,23 @@
 
   gtag('config', 'UA-94034622-3');
 </script>
+
+<!--
+<script>
+  function signOut(){
+    $.ajax({
+      type: "get",
+      url: 'http"//localhost:5000/logOut',
+      data: {},
+      dataType: 'text',
+      success: function(res){
+        location.reload();
+      }
+    });
+  }
+</script>
+-->
+
 <!-- /END GA --></head>
 
 <body>
@@ -243,9 +260,18 @@
                 <i class="fas fa-cog"></i> Settings
               </a> -->
               <div class="dropdown-divider"></div>
+              <button type="button" onclick="location.href='/login';" style="cursor:pointer;">Logout</button>
+              <!--
               <a href="#" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Logout
+                <!--
+                <div class="signOut">
+                  <button type="button" onclick="signOut">Logout</button>
+                </div>
+                
               </a>
+              -->
+           
             </div>
           </li>
         </ul>
